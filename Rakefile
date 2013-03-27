@@ -19,3 +19,9 @@ end
 #task :test do
 #  `open -a Safari test/suite.html`
 #end
+
+desc "Update HTML5 Player"
+task :debughtml5 do
+  `cp -v audiojs/audio.css ../html5-engine/src/audio.css`
+  `cp -v audiojs/audio.js ../html5-engine/src/audio.min.js`
+end
